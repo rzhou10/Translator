@@ -1,6 +1,9 @@
 * {
-  text-align: center;
+  text-align: justify;
+  text-align-last: center;
   font-family: "Roboto";
+  background-color: black;
+  color: white;
 }
 
 #whole{
@@ -12,14 +15,46 @@
   display: table
 }
 
+form{
+  display:inline-block;
+}
+
 select{
   padding: 10px;
   font: inherit;
+  border: thin solid blue;
+  border-radius: 10px;
+  background-color: gray;
+  font-size: 15px;
+  -webkit-appearance: none;
+}
+
+select option{
+  clear: left;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  text-align: center;
+}
+
+input:hover{
+  background-color: lightgray;
 }
 
 input{
+  border-radius: 10px;
+  border: none;
+  background-color: blue;
+  color: black;
   padding: 10px;
   font-family: "Roboto";
+}
+
+button{
+  text-align: center;
+  position: relative;
+  left: 50%;
+  right: 50%;
 }
 
 .row {
@@ -27,7 +62,7 @@ input{
 }
 
 .cell {
-  padding: 0px 20px 0px 20px;
+  padding: 20px 20px 20px 20px;
   display: table-cell;
   text-align: center;
 }

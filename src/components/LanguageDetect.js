@@ -4,16 +4,12 @@ import {colorCode} from "./colorCode";
 class LanguageDetect extends Component{
     constructor(props){
         super(props);
-        this.state = {
-            language: props.language,
-            color: colorCode[props.language]
-        }
     }
 
     render(){
         return(
             //{this.state.language}
-            <p>In: <span style={{color: this.state.color}}>{this.state.language}</span></p>
+            <p>In: <span style={{color: colorCode[this.props.language]}}>{this.props.language}</span></p>
         )
     }
 }
